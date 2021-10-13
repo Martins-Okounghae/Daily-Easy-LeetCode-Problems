@@ -27,9 +27,11 @@ def rotate(nums, k):
 
     for num in range(length):
         newArray[(num + k) % length] = nums[num]
+        print(newArray)
+        #print(nums[num])
 
     nums[:] = newArray
 
-result = rotate([ 1, 2, 3, 4, 5, 6, 7],3 )
+result = rotate([ 17, 12, 23, 54, 25, 36, 19],3 )
 
-print(result)
+#print(result)
